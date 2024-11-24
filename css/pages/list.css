@@ -94,6 +94,9 @@
 .page-list .level-container .level .records a:hover {
     text-decoration: underline;
 }
+.og svg{
+    display: flex;
+}
 .page-list .meta {
     display: flex;
     flex-direction: column;

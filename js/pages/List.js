@@ -71,13 +71,14 @@ export default {
                                 <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
                             </td>
                             <td class="hz">
-                                <p>{{ record.hz }}Hz</p>
+                                <p>{{ record.hz || "undefined " }}Hz</p>
                             </td>
                         </tr>
                     </table>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>(ノಠ益ಠ)ノ彡┻━┻</p>
+                    <p>The Level didn't load properly</p>
                 </div>
             </div>
             <div class="meta-container">
@@ -98,30 +99,46 @@ export default {
                             </li>
                         </ol>
                     </template>
+                    <h3>Level Requirements</h3>
+                    <p>
+                        - Level must be rated
+                    </p>
+                    <p>
+                        - Level must be below 60 seconds of length
+                    </p>
+                    <p>
+                        - No spam that reaches above 10 CPS
+                    </p>
+                    <p>
+                        - The level can be also on the demonlist (we hate pointercrate)
+                    </p>
+                    <p>
+                        - The whole level can't be spam
+                    </p>
                     <h3>Submission Requirements</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        - Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
                     </p>
                     <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
+                        - Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
                     </p>
                     <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
+                        - Have either source audio or clicks/taps in the video. Edited audio only does not count
                     </p>
                     <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
+                        - The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
                     </p>
                     <p>
-                        The recording must also show the player hit the endwall, or the completion will be invalidated.
+                        - The recording must also show the player hit the endwall, or the completion will be invalidated.
                     </p>
                     <p>
-                        Do not use secret routes or bug routes
+                        - Do not use secret routes or bug routes
                     </p>
                     <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
+                        - Do not use easy modes, only a record of the unmodified level qualifies
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        - Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
                     </p>
                 </div>
             </div>
